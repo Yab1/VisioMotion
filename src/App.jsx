@@ -1,11 +1,23 @@
 // State and context hooks from React.
-import { useEffect } from "react";
+import React from "react";
+import { useState, useEffect } from "react";
 
 // Components for website displaying.
 import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Services from "./Components/Services";
+import Experience from "./Components/Experience";
+import Works from "./Components/Works";
+import Contact from "./Components/Contact";
 
 function App() {
+  const [open, setOpen] = useState(false);
+
+  const menuController = () => {
+    setOpen(!open);
+  };
+
   useEffect(() => {
     if (
       localStorage.theme === "dark" ||
@@ -19,10 +31,15 @@ function App() {
   }, []);
 
   return (
-    <>
-      <Header />
-      <HeroSection />
-    </>
+    <React.Fragment>
+      <Header open={open} menuController={menuController} />
+      <Hero />
+      <About />
+      <Services />
+      <Experience />
+      <Works />
+      <Contact />
+    </React.Fragment>
   );
 }
 
