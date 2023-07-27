@@ -64,7 +64,7 @@ export default function Header({ open, menuController }) {
     // desktop header
     <header
       id="header"
-      className="py-2.5 border-b border-slate-400 md:px-5 lg:px-10 xl:px-20"
+      className="py-2.5 border-b fixed w-full border-slate-400 md:px-10 lg:px-24 xl:px-60 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50"
     >
       <div className="flex justify-between px-2.5">
         {/* logo text  */}
@@ -97,13 +97,13 @@ export default function Header({ open, menuController }) {
         >
           <motion.ul className="flex gap-8" variants={ulVariants}>
             {[
-              "Home",
-              "About",
-              "Services",
-              "Experience",
-              "Works",
-              "Blog",
-              "Contact",
+              "home",
+              "about",
+              "services",
+              "experience",
+              "works",
+              "blog",
+              "contact",
             ].map((nav) => (
               <motion.li
                 key={nav}
@@ -121,7 +121,7 @@ export default function Header({ open, menuController }) {
       <AnimatePresence>
         {open ? (
           <motion.nav
-            className="px-3 bg-slate-50 dark:bg-slate-900 w-screen border-slate-400 lg:hidden"
+            className="px-3 bg-slate-50 dark:bg-slate-900 w-screen absolute border-slate-400 lg:hidden"
             variants={ulVariants}
             initial="hidden"
             animate="visible"
