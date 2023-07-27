@@ -1,0 +1,50 @@
+{
+  "education": [
+    {
+      "institution": "Adama Science and Technology University",
+      "degree": "Computer Science and Engineering",
+      "graduationYear": "2022"
+    },
+    {
+      "institution": "The ALX Holberton Software Engineering",
+      "degree": "Software Engineering",
+      "graduationYear": "2023"
+    }
+  ],
+  "workExperience": [
+    {
+      "company": " Hello Cash",
+      "position": "Sales and On-boarding Specialist",
+      "startDate": "June 2019",
+      "endDate": "December 2020",
+      "responsibilities": "Accomplished Sales Specialist, adept at driving revenue onboarding clients, and surpassing targets. Ready to contribute to your team's success"
+    },
+    {
+      "company": "Marakisoft Technologies",
+      "position": "Front End Developer",
+      "startDate": "January 2021",
+      "endDate": "Present",
+      "responsibilities": "Responsible for creating user-friendly web applications and collaborating with the design team."
+    }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "Behailu Fantahun",
+      "designation": "Territory sales manager, Multichoice Ethiopia",
+      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+    }
+  ],
+  "links": [
+    "src/assets/tool-1.png",
+    "src/assets/tool-7.png",
+    "src/assets/tool-8.png",
+    "src/assets/tool-4.png",
+    "src/assets/tool-11.png",
+    "src/assets/tool-3.png",
+    "src/assets/tool-5.svg",
+    "src/assets/tool-2.png",
+    "src/assets/tool-6.png",
+    "src/assets/tool-9.png"
+  ]
+}
