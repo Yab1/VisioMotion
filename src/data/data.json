@@ -1,4 +1,34 @@
 {
+  "titles": [
+    "I'm a Front-End Developer",
+    "I'm a Creative Web Designer",
+    "I'm an Aspiring Software Engineer",
+    "I'm a JavaScript Lover",
+    "I'm an Enthusiastic UI/UX Designer",
+    "I'm a CSS Magician"
+  ],
+  "socials": [
+    {
+      "id": 1,
+      "platform": "Telegram",
+      "url": "https://t.me/CasperWasTaken"
+    },
+    {
+      "id": 2,
+      "platform": "Linkedin",
+      "url": "https://www.linkedin.com/in/yeabsera-lisanework-7570981ba/"
+    },
+    {
+      "id": 3,
+      "platform": "Github",
+      "url": "https://github.com/Yab1"
+    },
+    {
+      "id": 4,
+      "platform": "Pinterest",
+      "url": "https://www.pinterest.com/Afro_Habesha/"
+    }
+  ],
   "education": [
     {
       "institution": "Adama Science and Technology University",
