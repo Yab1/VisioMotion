@@ -77,7 +77,6 @@ export default function Contact() {
             type="email"
             placeholder="Email address"
             value={formData.email}
-            border
             onChange={(e) =>
               setFormData((prev) => ({ ...prev, email: e.target.value }))
             }
