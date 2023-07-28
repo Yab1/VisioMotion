@@ -29,6 +29,54 @@
       "url": "https://www.pinterest.com/Afro_Habesha/"
     }
   ],
+  "services": [
+    {
+      "id": 1,
+      "title": "Web Design and Development",
+      "description": "I create visually appealing and functional websites with seamless user interactions, focusing on responsive layouts and intuitive designs for your target audience.",
+      "bgColor": "#64748b",
+      "icon": "src/assets/service-1-1.png",
+      "skillLevel": "75%"
+    },
+    {
+      "id": 2,
+      "title": "User Interface (UI) Development",
+      "description": "I transform design mockups into engaging and accessible user interfaces using HTML, CSS, and JavaScript, ensuring a seamless user experience.",
+      "bgColor": "#e11d48",
+      "icon": "src/assets/service-2-1.svg",
+      "skillLevel": "80%"
+    },
+    {
+      "id": 3,
+      "title": "Performance Optimization",
+      "description": "I specialize in optimizing websites for speed and performance, guaranteeing faster load times and an enhanced user experience that leaves a lasting impression.",
+      "bgColor": "#eab308",
+      "icon": "src/assets/service-3-1.png",
+      "skillLevel": "50%"
+    }
+  ],
+  "statistics": [
+    {
+      "name": "Projects Completed",
+      "count": 10,
+      "icon": "HandThumbsUp"
+    },
+    {
+      "name": "Years Of Experience",
+      "count": 3,
+      "icon": "Calendar"
+    },
+    {
+      "name": "Satisfied Clients",
+      "count": 5,
+      "icon": "People"
+    },
+    {
+      "name": "Nominees Winner",
+      "count": 5,
+      "icon": "Trophy"
+    }
+  ],
   "education": [
     {
       "institution": "Adama Science and Technology University",
