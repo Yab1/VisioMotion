@@ -105,11 +105,68 @@
       "responsibilities": "Responsible for creating user-friendly web applications and collaborating with the design team."
     }
   ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Project A",
+      "description": "A web application for managing tasks and deadlines.",
+      "image": "/src/assets/1-1 (1).svg",
+      "url": "#",
+      "priority": "High"
+    },
+    {
+      "id": 2,
+      "name": "Project B",
+      "description": "An e-commerce website with a user-friendly interface.",
+      "image": "/src/assets/1-1 (1).svg",
+      "url": "#",
+      "priority": "High"
+    },
+    {
+      "id": 3,
+      "name": "Project C",
+      "description": "A portfolio website to showcase creative work.",
+      "image": "/src/assets/1-1 (1).svg",
+      "url": "#",
+      "priority": "High"
+    },
+    {
+      "id": 4,
+      "name": "Project D",
+      "description": "A portfolio website to showcase creative work.",
+      "image": "/src/assets/1-1 (1).svg",
+      "url": "#"
+    }
+  ],
   "testimonials": [
     {
       "id": 1,
       "name": "Behailu Fantahun",
-      "designation": "Territory sales manager, Multichoice Ethiopia",
+      "designation": "Territory sales manager",
+      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+    },
+    {
+      "id": 2,
+      "name": "Haile Melaku",
+      "designation": "CEO, ABC Company",
+      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+    },
+    {
+      "id": 3,
+      "name": "Nigist Fantahun",
+      "designation": "CSO, Nib International Bank",
+      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+    },
+    {
+      "id": 4,
+      "name": "Wubshet Zeleke",
+      "designation": "Backend Developer",
+      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+    },
+    {
+      "id": 5,
+      "name": "Haile Melaku",
+      "designation": "Frontend Developer",
       "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
     }
   ],
