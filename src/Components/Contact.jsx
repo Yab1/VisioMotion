@@ -32,23 +32,60 @@ export default function Contact() {
       message: "",
     }));
   }
+  const titleVariants = {
+    hidden: { y: 100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", duration: 0.8 },
+    },
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { duration: 1 } },
+    exit: { opacity: 0, transition: { duration: 1 } },
+  };
+  const leftVariants = {
+    hidden: { x: -50, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { type: "", duration: 1 } },
+  };
+  const rightVariants = {
+    hidden: { x: 100, opacity: 0 },
+    visible: { x: 0, opacity: 1, transition: { type: "", duration: 1 } },
+  };
   return (
     <section
       id="contact"
-      className="h-fit md:h-screen px-2.5 md:px-10 lg:px-24 xl:px-60 lg:grid lg:content-center"
+      className="h-fit md:h-screen px-2.5 md:px-10 lg:px-24 xl:px-60 lg:grid lg:content-center mt-24"
     >
-      <div className="font-black text-2xl align-center relative mb-14">
+      <motion.div
+        className="font-black text-2xl align-center relative mb-14"
+        variants={titleVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <img src="src/assets/download.svg" alt="dot" className="" />
 
         <h2 className="absolute left-5 top-5 z-1">Contact</h2>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-5">
-        <div className="text-slate-700 relative content-center py-10 md:py-0">
+      </motion.div>
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-5">
+        <motion.div
+          className="text-slate-700 relative content-center py-10 md:py-0"
+          variants={leftVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+        >
           <span className="text-2xl font-bold block">
             Let's talk about everything!{" "}
           </span>
           Don&#8217;t like forms? Send me an{" "}
-          <a href="mailto:yabilisanu@gmail.com" className="text-rose-600">
+          <a
+            href="mailto:yabilisanu@gmail.com"
+            className="text-rose-600 relative z-10 hover:text-slate-900 dark:hover:text-slate-50 transition-color ease-in duration-75"
+          >
             email
           </a>{" "}
           👋
@@ -57,8 +94,14 @@ export default function Contact() {
             alt=""
             className="absolute top-3 md:top-12 opacity-20"
           />
-        </div>
-        <form className="grid md:grid-cols-2 gap-5 md:col-span-2">
+        </motion.div>
+        <motion.form
+          className="grid md:grid-cols-2 gap-5 md:col-span-2"
+          variants={rightVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
+        >
           <input
             required
             type="text"
@@ -104,10 +147,17 @@ export default function Contact() {
             placeholder="Message"
             className="px-5 py-3 rounded-xl outline-none text-slate-900 md:col-span-2 shadow"
           ></textarea>
-          <button className="bg-rose-600 px-6 py-2 rounded-full capitalize text-slate-50 w-fit mb-20">
+          <motion.button
+            className="bg-rose-600 px-6 py-2 rounded-full capitalize text-slate-50 w-fit mb-20"
+            variants={buttonVariants}
+            initial="hidden"
+            whileInView="visible"
+            whileTap={{ scale: 0.85 }}
+            viewport={{ once: true, amount: 0.8 }}
+          >
             send message
-          </button>
-        </form>
+          </motion.button>
+        </motion.form>
       </div>
     </section>
   );

@@ -8,7 +8,7 @@ export default function Header({ open, menuController }) {
   const titleVariants = {
     hidden: {
       opacity: 0,
-      y: -200,
+      y: -100,
     },
     visible: {
       opacity: 1,
@@ -64,7 +64,7 @@ export default function Header({ open, menuController }) {
     // desktop header
     <header
       id="header"
-      className="py-2.5 fixed w-full border-slate-400 md:px-10 lg:px-24 xl:px-60 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50"
+      className="py-2.5 sticky z-40 w-full border-slate-400 md:px-10 lg:px-24 xl:px-60 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50"
     >
       <div className="flex justify-between px-2.5">
         {/* logo text  */}
@@ -121,7 +121,7 @@ export default function Header({ open, menuController }) {
       <AnimatePresence>
         {open ? (
           <motion.nav
-            className="px-3 bg-slate-50 dark:bg-slate-900 w-screen absolute border-slate-400 lg:hidden"
+            className="px-3 bg-slate-50 dark:bg-slate-900 w-screen absolute border-slate-400 pt-3 lg:hidden"
             variants={ulVariants}
             initial="hidden"
             animate="visible"

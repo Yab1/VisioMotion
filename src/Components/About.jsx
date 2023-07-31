@@ -19,16 +19,25 @@ export default function About() {
     setStatistics(data.statistics);
   }, []);
 
+  const titleVariants = {
+    hidden: { y: 100, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: { type: "spring", duration: 0.8 },
+    },
+  };
+
   const leftVariants = {
-    hidden: { x: -250, opacity: 0 },
+    hidden: { x: -50, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { type: "", duration: 1 } },
   };
   const rightVariants = {
-    hidden: { x: 250, opacity: 0 },
+    hidden: { x: 100, opacity: 0 },
     visible: { x: 0, opacity: 1, transition: { type: "", duration: 1 } },
   };
   const bottomVariants = {
-    hidden: { y: 250, opacity: 0 },
+    hidden: { y: 50, opacity: 0 },
     visible: { y: 0, opacity: 1, transition: { type: "", duration: 1 } },
   };
 
@@ -37,17 +46,24 @@ export default function About() {
       id="about"
       className="md:h-screen px-2.5 md:px-10 lg:px-24 xl:px-60 lg:grid lg:content-center"
     >
-      <div className="font-black text-2xl align-center relative mb-14">
+      <motion.div
+        className="font-black text-2xl align-center relative mb-14"
+        variants={titleVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.8 }}
+      >
         <img src="src/assets/download.svg" alt="dot" className="" />
 
         <h2 className="absolute left-5 top-5 z-1">About Me</h2>
-      </div>
+      </motion.div>
 
       <div className="grid grid-cols-1 gap-5 md:grid-cols-5 lg:grid-cols-6 md:gap-0">
         <motion.img
           variants={leftVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
           src="src/assets/avatar-1-2.svg"
           alt=""
           className="mx-auto md:my-auto"
@@ -57,7 +73,8 @@ export default function About() {
           className="relative p-1 md:col-span-4 lg:col-span-5"
           variants={rightVariants}
           initial="hidden"
-          animate="visible"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.8 }}
         >
           <span className="before:absolute before:inset-0 before:w-6 before:h-6 before:bg-slate-50 before:rotate-45 before:top-1/3 shadow hidden md:inline"></span>
           <span className="before:absolute before:bg-slate-50 before:w-6 before:h-6 before:top-0 before:rotate-45 flex justify-center align-center shadow md:hidden"></span>
@@ -83,10 +100,10 @@ export default function About() {
             {/* Services */}
             <div className="flex flex-col gap-5">
               {services.map((service) => (
-                <div>
-                  <div className="flex justify-beinertia mb-1 text-xs font-bold lg:text-sm xl:text-md capitalize">
+                <div key={service.id}>
+                  <div className="flex justify-between mb-1 text-xs font-bold lg:text-sm xl:text-md capitalize">
                     <span>{service.title}</span>
-                    <span>{`${service.skillLevel}%`}</span>
+                    <span>{service.skillLevel}</span>
                   </div>
                   <div className="w-full bg-slate-200 rounded-full">
                     <div
@@ -109,7 +126,8 @@ export default function About() {
         className="text-slate-300 grid grid-cols-2 gap-5 mt-10 md:grid-cols-4 md:justify-beinertia md:gap-0 justify-items-center"
         variants={bottomVariants}
         initial="hidden"
-        animate="visible"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.8 }}
       >
         {statistics.map((stat) => {
           const Icon = eval(stat.icon);
@@ -136,8 +154,3 @@ export default function About() {
     </section>
   );
 }
-//  className={
-//           "relative z-10 w-full p-1 bg-slate-200 rounded before:absolute before:p-1 before:rounded before:top-0 before:left-0" +
-//           " " +
-//           `before:${service.width} before:${service.bgColor}`
-//         }

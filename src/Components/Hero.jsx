@@ -60,7 +60,7 @@ export default function Hero() {
     <AnimatePresence>
       <section
         id="home"
-        className="h-screen grid grid-cols-1 justify-items-center content-center gap-10"
+        className="h-screen grid grid-cols-1 justify-items-center content-evenly"
       >
         <motion.div
           className="grid grid-cols-1 justify-items-center gap-5"
@@ -120,15 +120,12 @@ export default function Hero() {
         </motion.div>
         <motion.a
           href="#about"
-          className=""
           variants={scrollVariant}
           initial="hidden"
           animate="visible"
         >
-          <span className="capitalize text-xs font-extralight">
-            scroll down
-          </span>
-          <div className="border rounded-lg w-fit px-2 mx-auto">
+          <span className="capitalize text-xs font-light">scroll down</span>
+          <div className="border rounded-lg w-fit px-2 mx-auto mt-3">
             <div className="animate-bounce font-bold text-xl">.</div>
           </div>
         </motion.a>
