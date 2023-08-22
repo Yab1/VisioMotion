@@ -35,8 +35,8 @@ Vision Motion is a user-friendly platform designed to help you create and manage
 
 <table>
   <tr>
-    <td>Version One<img src="screenshot1.png" alt="Screenshot 1" width="400"/></td>
-    <td>Version Two<img src="screenshot2.png" alt="Screenshot 2" width="400"/></td>
+    <td>Version One<img src="https://github.com/Yab1/VisioMotion/blob/version_one/src/assets/screenshot_one.png" alt="Screenshot 1" width="400"/></td>
+    <td>Version Two<img src="https://github.com/Yab1/VisioMotion/blob/version_two/src/assets/screenshot_two.png" alt="Screenshot 2" width="400"/></td>
   </tr>
 </table>
 
