@@ -9,6 +9,7 @@ import About from "./Components/About";
 import Services from "./Components/Services";
 import Experience from "./Components/Experience";
 import Works from "./Components/Works";
+import Testimonials from "./Components/Testimonials";
 import Contact from "./Components/Contact";
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
       <Services />
       <Experience />
       <Works />
+      <Testimonials />
       <Contact />
     </React.Fragment>
   );
