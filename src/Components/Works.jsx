@@ -9,21 +9,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ThreeDots, XLg } from "react-bootstrap-icons";
 
 export default function Works() {
-  const [testimonials, setTestimonials] = useState([]);
   const [projects, setProjects] = useState([]);
-  const [width, setWidth] = useState(0);
-  const [activeTab, setActiveTab] = useState(0);
   const [open, setOpen] = useState(false);
   const [currentProject, setCurrentProject] = useState([]);
   const [showMore, setShowMore] = useState(false);
-  const carousel = useRef();
 
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  });
-
-  useEffect(() => {
-    setTestimonials(data.testimonials);
     let filteredProjects = data.projects.filter(
       (project) => project.priority === "High"
     );
@@ -33,29 +24,6 @@ export default function Works() {
       setProjects(data.projects);
     }
   }, [showMore]);
-
-  useEffect(() => {
-    let scrollPosition = 0;
-    let currentActiveTab = 0;
-    const setScrollInterval = setInterval(() => {
-      scrollPosition += carousel.current.offsetWidth;
-      if (scrollPosition > width) {
-        scrollPosition = 0;
-      }
-
-      currentActiveTab = (currentActiveTab + 1) % testimonials.length;
-      setActiveTab(testimonials[currentActiveTab].id);
-
-      carousel.current.scrollTo({
-        left: scrollPosition,
-        behavior: "smooth",
-      });
-    }, 4000);
-
-    return () => {
-      clearInterval(setScrollInterval);
-    };
-  }, [width]);
 
   const closePopup = (event) => {
     event.preventDefault();
@@ -129,7 +97,7 @@ export default function Works() {
                 <motion.a
                   key={project.id}
                   href={project.url}
-                  className="group bg-slate-50 rounded-2xl relative z-0 before:inset-0 before:bg-slate-900 before:z-20 before:opacity-40 before:rounded-2xl hover:before:absolute rounded-2xl"
+                  className="group bg-slate-50 relative z-0 before:inset-0 before:bg-slate-900 before:z-20 before:opacity-40 before:rounded-2xl hover:before:absolute rounded-2xl"
                   variants={containerVariants}
                   initial="hidden"
                   exit="exit"
@@ -148,7 +116,7 @@ export default function Works() {
                     </h2>
                     <button
                       id={project.id}
-                      className="p-2 bg-yellow-500 rounded-full relative w-fit relative z-30"
+                      className="p-2 bg-yellow-500 rounded-full relative w-fit z-30"
                       onClick={(event) => openPopup(event, project)}
                     >
                       <ThreeDots className="pointer-events-none" />
@@ -223,87 +191,6 @@ export default function Works() {
             </a>
           </motion.button>
         </div>
-      </section>
-
-      {/* Clients & Reviews */}
-      <section className="flex flex-col gap-10 justify-center mt-24">
-        <div
-          id="works"
-          className="px-2.5 md:px-10 lg:px-24 xl:px-60 grid lg:content-center gap-5"
-        >
-          <motion.div
-            className="font-black text-2xl align-center relative mb-14"
-            variants={titleVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.8 }}
-          >
-            <img src="src/assets/download.svg" alt="dot" className="" />
-
-            <h2 className="absolute left-5 top-5 z-1">Clients & Reviews</h2>
-          </motion.div>
-          {/* Testimonials */}
-          <motion.div ref={carousel} className="overflow-x-auto scrollbar">
-            <motion.div
-              drag="x"
-              style={{ touchAction: "none" }}
-              dragConstraints={{ right: 0, left: -width }}
-              className="flex"
-
-              // dragListener={false}
-            >
-              {testimonials.map((person) => (
-                <div
-                  key={person.id}
-                  id={person.id}
-                  className="flex-even px-5 md:px-20"
-                >
-                  <img
-                    src="src/assets/avatar-3-1.svg"
-                    alt="testimonial"
-                    className="mx-auto mb-2"
-                  />
-                  <p className="capitalize text-slate-900 dark:text-slate-50 text-lg font-bold text-center">
-                    {person.name}
-                  </p>
-                  <p className="text-slate-600 dark:text-slate-400 text-center text-sm capitalize mb-3">
-                    {person.designation}
-                  </p>
-                  <span className="relative before:absolute before:w-7 before:h-7 before:bg-slate-50 before:rotate-45 flex justify-center shadow before:dark:bg-slate-800"></span>
-                  <div className="text-xs md:text-base bg-slate-50 dark:bg-slate-800 rounded-xl p-3 md:p-5 relative z-10">
-                    <p>{person.testimonialText}</p>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          </motion.div>
-          <div className="flex gap-2 justify-center">
-            {testimonials.map((person) => (
-              <span
-                id={person.id}
-                key={person.id}
-                className={
-                  "flex w-2 h-2 rounded-full" +
-                  " " +
-                  (person.id === activeTab ? "bg-rose-600" : "bg-slate-400") +
-                  " " +
-                  (person.id === activeTab ? "w-4 h-2" : "w-2 h-2")
-                }
-              ></span>
-            ))}
-          </div>
-        </div>
-        {/* Tools */}
-        {/* <section className="grid grid-cols-5 px-2.5 md:px-10 lg:px-24 xl:px-60 justify-items-center">
-          {links.map((link) => (
-            <img
-              key={link}
-              src={link}
-              alt="tool"
-              className="w-16 grayscale opacity-10 "
-            />
-          ))}
-        </section> */}
       </section>
     </React.Fragment>
   );
