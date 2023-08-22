@@ -44,3 +44,11 @@ body::-webkit-scrollbar {
 .progress-bar {
   transition: width 0.5s ease-in-out;
 }
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  cursor: grab;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
