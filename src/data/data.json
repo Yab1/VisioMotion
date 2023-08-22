@@ -142,44 +142,37 @@
     {
       "id": 1,
       "name": "Behailu Fantahun",
-      "designation": "Territory sales manager",
-      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+      "designation": "Territory Sales Manager",
+      "testimonialText": "I am truly impressed by your dedication and expertise in web development. Your creative approach and attention to detail have been a valuable asset to our projects.",
+      "image": "https://media.licdn.com/dms/image/C4E03AQEDMOG4nOjNbw/profile-displayphoto-shrink_800_800/0/1655707309127?e=1697673600&v=beta&t=XhalxUt11da0QA5ST4shpgeLASJPKZULCE7QaE9QE2o"
     },
     {
       "id": 2,
-      "name": "Haile Melaku",
-      "designation": "CEO, ABC Company",
-      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+      "name": "Nigist Fantahun",
+      "designation": "CSO, Nib International Bank",
+      "testimonialText": "I'm incredibly impressed with your ability to understand complex requirements and translate them into user-friendly solutions. Your dedication to excellence is evident in every project.",
+      "image": "https://media.licdn.com/dms/image/C5603AQEykYSblaQEqw/profile-displayphoto-shrink_800_800/0/1661366493758?e=1697673600&v=beta&t=BcEhL-xMVI_BBOAXk80oXrMY-DS65t-wOPwCf0WslzY"
     },
     {
       "id": 3,
-      "name": "Nigist Fantahun",
-      "designation": "CSO, Nib International Bank",
-      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+      "name": "Wubshet Zeleke",
+      "designation": "Backend Developer",
+      "testimonialText": "Your collaborative approach and effective communication skills have made our teamwork seamless. Your technical expertise and problem-solving abilities are remarkable.",
+      "image": "https://media.licdn.com/dms/image/D4E03AQE-ODi7UP937Q/profile-displayphoto-shrink_800_800/0/1684442167237?e=1697673600&v=beta&t=p7AvnwujcOwAwAVpVRPI2jrcIcE31jeNWSh00WXlPQ0"
     },
     {
       "id": 4,
-      "name": "Wubshet Zeleke",
-      "designation": "Backend Developer",
-      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+      "name": "Haile Melaku",
+      "designation": "Frontend Developer",
+      "testimonialText": "Your attention to design aesthetics and responsive layouts has elevated our web applications. Your contributions have positively impacted user experience and engagement.",
+      "image": "https://media.licdn.com/dms/image/D4E35AQHZnkiE4wTYMw/profile-framedphoto-shrink_800_800/0/1690621115653?e=1693324800&v=beta&t=pHbb39fAPuUhMPYBvaHWcUfjgkVNF7rwdgPMp7hUdNY"
     },
     {
       "id": 5,
-      "name": "Haile Melaku",
-      "designation": "Frontend Developer",
-      "testimonialText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed lorem eget lorem blandit ultrices. Nullam sit amet dolor ac tortor facilisis ultricies."
+      "name": "Robel Alemu",
+      "designation": "Project Manager",
+      "testimonialText": "Your strategic insights and data-driven approach have significantly improved our marketing campaigns. Your dedication to achieving results is inspiring.",
+      "image": "https://media.licdn.com/dms/image/D4D35AQFHbciCzyXG_Q/profile-framedphoto-shrink_800_800/0/1659180105636?e=1693324800&v=beta&t=7bc-tKmB5pgid6yI9MnK5OrSxdqtwOGkIVBerKBE7RI"
     }
-  ],
-  "links": [
-    "src/assets/tool-1.png",
-    "src/assets/tool-7.png",
-    "src/assets/tool-8.png",
-    "src/assets/tool-4.png",
-    "src/assets/tool-11.png",
-    "src/assets/tool-3.png",
-    "src/assets/tool-5.svg",
-    "src/assets/tool-2.png",
-    "src/assets/tool-6.png",
-    "src/assets/tool-9.png"
   ]
 }
