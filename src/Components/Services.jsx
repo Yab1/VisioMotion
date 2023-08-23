@@ -7,7 +7,7 @@ import data from "../data/data.json";
 // Import Assets
 import dots from "../assets/download.svg";
 import service_one from "../assets/service-1-1.png";
-import service_two from "../assets/service-2-1.png";
+import service_two from "../assets/service-2-1.svg";
 import service_three from "../assets/service-3-1.png";
 
 // Importing the motion module from "framer-motion" for animations.
