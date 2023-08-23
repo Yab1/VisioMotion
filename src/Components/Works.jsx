@@ -152,7 +152,7 @@ export default function Works() {
                   </motion.button>
                   <div className="bg-slate-0 rounded-2xl bg-slate-50 grid gap-3 p-5 mx-3">
                     <img
-                      src={currentProject.image}
+                      src={thumbnail}
                       alt={currentProject.name}
                       className="rounded-2xl md:w-96"
                     />
