@@ -4,6 +4,9 @@ import React, { useState, useEffect } from "react";
 // Import the JSON data.
 import data from "../data/data.json";
 
+// Import Assets
+import dots from "../assets/download.svg";
+
 // Importing icons from the 'react-bootstrap-icons' library.
 import { ArchiveFill, Bookshelf } from "react-bootstrap-icons";
 
@@ -68,7 +71,7 @@ export default function Experience() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <img src="src/assets/download.svg" alt="dot" className="" />
+        <img src={dots} alt="dot" />
 
         <h2 className="absolute left-5 top-5 z-1">Experience</h2>
       </motion.div>

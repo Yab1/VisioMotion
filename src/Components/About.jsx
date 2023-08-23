@@ -4,8 +4,12 @@ import React, { useState, useEffect, useRef } from "react";
 // Import the JSON data.
 import data from "../data/data.json";
 
+// Import Assets
+import dots from "../assets/download.svg";
+import avatar from "../assets/avatar-1-2.svg";
+
 // Importing the motion module from "framer-motion" for animations.
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 // Importing icons from the 'react-bootstrap-icons' library.
 import { Calendar, HandThumbsUp, People, Trophy } from "react-bootstrap-icons";
@@ -53,7 +57,7 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <img src="src/assets/download.svg" alt="dot" className="" />
+        <img src={dots} alt="dot" />
 
         <h2 className="absolute left-5 top-5 z-1">About Me</h2>
       </motion.div>
@@ -64,8 +68,8 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.8 }}
-          src="src/assets/avatar-1-2.svg"
-          alt=""
+          src={avatar}
+          alt="avatar"
           className="mx-auto md:my-auto"
         />
         {/* Card*/}
@@ -91,7 +95,7 @@ export default function About() {
                 className="bg-rose-600 px-6 py-1 rounded-full capitalize text-slate-50 w-fit mb-3"
                 whileTap={{ scale: 0.85 }}
               >
-                <a href="" download>
+                <a href="../assets/Yeabsera.pdf" download>
                   download CV
                 </a>
               </motion.button>
@@ -129,27 +133,31 @@ export default function About() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
       >
-        {statistics.map((stat) => {
-          const Icon = eval(stat.icon);
-          return (
-            <div key={stat.name} className="flex gap-3">
-              <Icon size={30} className="mt-2" />
-              <div>
-                <p className="text-2xl font-black">
-                  {stat.count}
-                  {stat.name === "Projects Completed" && (
-                    <span className="text-sm align-start relative bottom-2">
-                      +
-                    </span>
-                  )}
-                </p>
-                <p className="text-sm capitalize md:text-xs md:font-bold">
-                  {stat.name}
-                </p>
-              </div>
+        {statistics.map((stat) => (
+          <div key={stat.name} className="flex gap-3">
+            {stat.icon === "HandThumbsUp" && (
+              <HandThumbsUp size={30} className="mt-2" />
+            )}
+            {stat.icon === "Calendar" && (
+              <Calendar size={30} className="mt-2" />
+            )}
+            {stat.icon === "People" && <People size={30} className="mt-2" />}
+            {stat.icon === "Trophy" && <Trophy size={30} className="mt-2" />}
+            <div>
+              <p className="text-2xl font-black">
+                {stat.count}
+                {stat.name === "Projects Completed" && (
+                  <span className="text-sm align-start relative bottom-2">
+                    +
+                  </span>
+                )}
+              </p>
+              <p className="text-sm capitalize md:text-xs md:font-bold">
+                {stat.name}
+              </p>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </motion.section>
     </section>
   );

@@ -1,9 +1,11 @@
 // State and context hooks from React.
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
+
+// Import Assets
+import dots from "../assets/download.svg";
 
 // Importing the motion module from "framer-motion" for animations.
-import { motion, AnimatePresence } from "framer-motion";
-import { Send } from "react-bootstrap-icons";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -66,7 +68,7 @@ export default function Contact() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.8 }}
       >
-        <img src="src/assets/download.svg" alt="dot" className="" />
+        <img src={dots} alt="dot" />
 
         <h2 className="absolute left-5 top-5 z-1">Contact</h2>
       </motion.div>

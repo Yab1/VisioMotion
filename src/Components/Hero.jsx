@@ -95,20 +95,20 @@ export default function Hero() {
             className="flex justify-between w-4/6 mt-4"
             variants={childVariant}
           >
-            {socials.map((social) => {
-              const Icons = eval(social.platform);
-              return (
-                <a
-                  key={social.id}
-                  title={social.platform}
-                  href={social.url}
-                  target="_blank"
-                  className="hover:text-yellow-300 cursor:pointer"
-                >
-                  <Icons size={20} />
-                </a>
-              );
-            })}
+            {socials.map((social) => (
+              <a
+                key={social.id}
+                title={social.platform}
+                href={social.url}
+                target="_blank"
+                className="hover:text-yellow-300 cursor:pointer"
+              >
+                {social.id === 1 && <Telegram size={20} />}
+                {social.id === 2 && <Linkedin size={20} />}
+                {social.id === 3 && <Github size={20} />}
+                {social.id === 4 && <Pinterest size={20} />}
+              </a>
+            ))}
           </motion.div>
           <motion.button
             className="bg-rose-600 px-6 py-1 rounded-full mt-5"

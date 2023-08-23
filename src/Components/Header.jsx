@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 // Importing the motion module from "framer-motion" for animations.
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -5,6 +7,40 @@ import { motion, AnimatePresence } from "framer-motion";
 import { List, XLg } from "react-bootstrap-icons";
 
 export default function Header({ open, menuController }) {
+  const [activeTab, setActiveTab] = useState(0);
+  const [tabs, setTabs] = useState([
+    "home",
+    "about",
+    "services",
+    "experience",
+    "works",
+    "contact",
+  ]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const tabsOffsets = tabs.map((item) => {
+        const element = document.getElementById(item);
+        return {
+          name: item,
+          offsetTop: element.offsetTop,
+        };
+      });
+      const activeTabIndex = tabsOffsets.findIndex(
+        (item) => item.offsetTop > scrollY + 100
+      );
+      setActiveTab(
+        activeTabIndex === -1 ? tabs.length - 1 : activeTabIndex - 1
+      );
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const titleVariants = {
     hidden: {
       opacity: 0,
@@ -26,11 +62,6 @@ export default function Header({ open, menuController }) {
         duration: 2,
       },
     },
-  };
-  const navVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-    exit: { opacity: 1 },
   };
   const ulVariants = {
     hidden: {
@@ -64,7 +95,7 @@ export default function Header({ open, menuController }) {
     // desktop header
     <header
       id="header"
-      className="py-2.5 sticky z-40 w-full border-slate-400 md:px-10 lg:px-24 xl:px-60 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50"
+      className="py-2.5 fixed z-40 w-full border-slate-400 md:px-10 lg:px-24 xl:px-60 bg-slate-50 text-slate-900 dark:bg-slate-900 dark:text-slate-50"
     >
       <div className="flex justify-between px-2.5">
         {/* logo text  */}
@@ -96,19 +127,14 @@ export default function Header({ open, menuController }) {
           exit="exit"
         >
           <motion.ul className="flex gap-8" variants={ulVariants}>
-            {[
-              "home",
-              "about",
-              "services",
-              "experience",
-              "works",
-              "blog",
-              "contact",
-            ].map((nav) => (
+            {tabs.map((nav) => (
               <motion.li
                 key={nav}
                 title={nav}
-                className="capitalize my-2"
+                className={
+                  "capitalize my-2 " +
+                  (nav === tabs[activeTab] ? "text-yellow-500" : "")
+                }
                 variants={liVariants}
               >
                 <a href={`#${nav}`}>{nav}</a>
@@ -128,18 +154,13 @@ export default function Header({ open, menuController }) {
             exit="exit"
           >
             <motion.ul variants={ulVariants}>
-              {[
-                "home",
-                "about",
-                "services",
-                "experience",
-                "works",
-                "blog",
-                "contact",
-              ].map((nav) => (
+              {tabs.map((nav) => (
                 <motion.li
                   key={nav}
-                  className="capitalize my-2"
+                  className={
+                    "capitalize my-2 " +
+                    (nav === tabs[activeTab] ? "text-yellow-500" : "")
+                  }
                   variants={liVariants}
                 >
                   <a href={`#${nav}`}>{nav}</a>

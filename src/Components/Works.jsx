@@ -4,6 +4,9 @@ import React, { useState, useEffect, useRef } from "react";
 // Import the JSON data.
 import data from "../data/data.json";
 
+// Import Assets
+import dots from "../assets/download.svg";
+
 // Importing the motion module from "framer-motion" for animations.
 import { motion, AnimatePresence } from "framer-motion";
 import { ThreeDots, XLg } from "react-bootstrap-icons";
@@ -85,7 +88,7 @@ export default function Works() {
             whileInView="visible"
             viewport={{ once: true, amount: 0.8 }}
           >
-            <img src="src/assets/download.svg" alt="dot" />
+            <img src={dots} alt="dot" />
 
             <h2 className="absolute left-5 top-5 z-1">Recent Works</h2>
           </motion.div>
