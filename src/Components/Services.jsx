@@ -6,6 +6,9 @@ import data from "../data/data.json";
 
 // Import Assets
 import dots from "../assets/download.svg";
+import service_one from "../assets/service-1-1.png";
+import service_two from "../assets/service-2-1.png";
+import service_three from "../assets/service-3-1.png";
 
 // Importing the motion module from "framer-motion" for animations.
 import { motion } from "framer-motion";
@@ -52,7 +55,17 @@ export default function Services() {
             }}
             whileHover={{ y: -15, transition: { type: "spring" } }}
           >
-            <img src={service.icon} alt="Service 01" className="w-20 mx-auto" />
+            <img
+              src={
+                service.id === 1
+                  ? service_one
+                  : service.id === 2
+                  ? service_two
+                  : service_three
+              }
+              alt="Service 01"
+              className="w-20 mx-auto"
+            />
             <p className="font-black text-xl text-center my-3">
               {service.title}
             </p>

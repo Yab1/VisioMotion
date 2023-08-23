@@ -6,6 +6,7 @@ import data from "../data/data.json";
 
 // Import Assets
 import dots from "../assets/download.svg";
+import thumbnail from "../assets/1-1 (1).svg";
 
 // Importing the motion module from "framer-motion" for animations.
 import { motion, AnimatePresence } from "framer-motion";
@@ -109,7 +110,7 @@ export default function Works() {
                   viewport={{ once: true, amount: 0.8 }}
                 >
                   <img
-                    src={project.image}
+                    src={thumbnail}
                     alt={project.name}
                     className="rounded-2xl relative z-10"
                   />
