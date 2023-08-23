@@ -4,6 +4,9 @@ import React, { useState, useEffect, useRef } from "react";
 // Import the JSON data.
 import data from "../data/data.json";
 
+// Import Assets
+import avatar from "../assets/avatar-1-2.svg";
+
 // Importing the motion module from "framer-motion" for animations.
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -69,7 +72,7 @@ export default function Hero() {
           animate="visible"
         >
           <motion.img
-            src="src/assets/avatar-1-2.svg"
+            src={avatar}
             alt="Profile Picture"
             className="rounded-full"
             variants={childVariant}
