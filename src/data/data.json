@@ -35,7 +35,7 @@
       "title": "Web Design and Development",
       "description": "I create visually appealing and functional websites with seamless user interactions, focusing on responsive layouts and intuitive designs for your target audience.",
       "bgColor": "#64748b",
-      "icon": "src/assets/service-1-1.png",
+      "icon": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/service-1-1.png",
       "skillLevel": "75%"
     },
     {
@@ -43,7 +43,7 @@
       "title": "User Interface (UI) Development",
       "description": "I transform design mockups into engaging and accessible user interfaces using HTML, CSS, and JavaScript, ensuring a seamless user experience.",
       "bgColor": "#e11d48",
-      "icon": "src/assets/service-2-1.svg",
+      "icon": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/service-2-1.svg",
       "skillLevel": "80%"
     },
     {
@@ -51,7 +51,7 @@
       "title": "Performance Optimization",
       "description": "I specialize in optimizing websites for speed and performance, guaranteeing faster load times and an enhanced user experience that leaves a lasting impression.",
       "bgColor": "#eab308",
-      "icon": "src/assets/service-3-1.png",
+      "icon": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/service-3-1.png",
       "skillLevel": "50%"
     }
   ],
@@ -110,7 +110,7 @@
       "id": 1,
       "name": "Project A",
       "description": "A web application for managing tasks and deadlines.",
-      "image": "/src/assets/1-1 (1).svg",
+      "image": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/1-1%20(1).svg",
       "url": "#",
       "priority": "High"
     },
@@ -118,7 +118,7 @@
       "id": 2,
       "name": "Project B",
       "description": "An e-commerce website with a user-friendly interface.",
-      "image": "/src/assets/1-1 (1).svg",
+      "image": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/1-1%20(1).svg",
       "url": "#",
       "priority": "High"
     },
@@ -126,7 +126,7 @@
       "id": 3,
       "name": "Project C",
       "description": "A portfolio website to showcase creative work.",
-      "image": "/src/assets/1-1 (1).svg",
+      "image": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/1-1%20(1).svg",
       "url": "#",
       "priority": "High"
     },
@@ -134,7 +134,7 @@
       "id": 4,
       "name": "Project D",
       "description": "A portfolio website to showcase creative work.",
-      "image": "/src/assets/1-1 (1).svg",
+      "image": "https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/1-1%20(1).svg",
       "url": "#"
     }
   ],
