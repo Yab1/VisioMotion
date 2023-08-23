@@ -1,20 +1,20 @@
-# Vision Motion - Free to Use Portfolio Website
+# Free to Use Portfolio Website
 
-![Vision Motion Logo](link-to-your-logo.png)
+![Logo](https://github.com/Yab1/portfolio-website-3/blob/main/public/favicon.ico)
 
-Welcome to Vision Motion Portfolio Website, a free-to-use platform for creating and showcasing your portfolio online. Whether you're a designer, developer, artist, or professional, this website allows you to present your work and achievements to the world.
+Welcome to the free to use Portfolio Website, a free-to-use platform for creating and showcasing your portfolio online. Whether you're a designer, developer, artist, or professional, this website allows you to present your work and achievements to the world.
 
 ## Table of Contents
 
-- [About Your Portfolio Website](#about-your-portfolio-website)
+- [About](#about)
 - [Features](#features)
 - [Usage](#usage)
 - [Screenshots](#screenshots)
 - [Contributing](#contributing)
 
-## About Your Portfolio Website
+## About
 
-Vision Motion is a user-friendly platform designed to help you create and manage your online portfolio. Showcase your projects, skills, and accomplishments in an organized and visually appealing manner. Whether you're a beginner or an experienced professional, this website makes it easy to present yourself to potential clients, employers, or collaborators.
+A user-friendly platform designed to help you create and manage your online portfolio. Showcase your projects, skills, and accomplishments in an organized and visually appealing manner. Whether you're a beginner or an experienced professional, this website makes it easy to present yourself to potential clients, employers, or collaborators.
 
 ## Features
 
@@ -33,12 +33,7 @@ Vision Motion is a user-friendly platform designed to help you create and manage
 
 ## Screenshots
 
-<table>
-  <tr>
-    <td>Version One<img src="screenshot1.png" alt="Screenshot 1" width="400"/></td>
-    <td>Version Two<img src="screenshot2.png" alt="Screenshot 2" width="400"/></td>
-  </tr>
-</table>
+![Screenshot](https://github.com/Yab1/portfolio-website-3/blob/main/src/assets/screenshot.png)
 
 ## Contributing
 
@@ -46,6 +41,7 @@ Contributions are welcome! If you'd like to enhance Your Portfolio Website or ad
 
 ---
 
-Visit Vision Motion [Live Demo](https://vision-motion-demo-url.com/)  
+Visit Site [Live Demo]()
+
 Connect with me:  
-Follow me on [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile/) | Check out my [GitHub](https://github.com/your-github-username) repository
+Visit my website at [Yeabsera](yeabsera-girxkocyp-yab1.vercel.app) | Follow me on [LinkedIn](https://www.linkedin.com/in/yeabsera-lisanework-7570981ba/) | Check out my [GitHub](https://github.com/Yab1)
