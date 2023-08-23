@@ -115,7 +115,7 @@ export default function Testimonials() {
               className={
                 "flex w-2 h-2 rounded-full" +
                 " " +
-                (person.id === activeTab ? "bg-violet-800" : "bg-slate-400") +
+                (person.id === activeTab ? "bg-yellow-500" : "bg-slate-400") +
                 " " +
                 (person.id === activeTab ? "w-4 h-2" : "w-2 h-2")
               }
