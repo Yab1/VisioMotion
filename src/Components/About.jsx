@@ -7,7 +7,7 @@ import data from "../data/data.json";
 // Import Assets
 import dots from "../assets/download.svg";
 import avatar from "../assets/avatar-1-2.svg";
-import resume from "../assets/Yeabsera/pdf";
+import resume from "../assets/Yeabsera.pdf";
 
 // Importing the motion module from "framer-motion" for animations.
 import { motion } from "framer-motion";
