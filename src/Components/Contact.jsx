@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 // Import Assets
 import dots from "../assets/download.svg";
+import worldMap from "../assets/world-map.png";
 
 // Importing the motion module from "framer-motion" for animations.
 import { motion } from "framer-motion";
@@ -92,8 +93,8 @@ export default function Contact() {
           </a>{" "}
           👋
           <img
-            src="src/assets/world-map.png"
-            alt=""
+            src={worldMap}
+            alt="world map"
             className="absolute top-3 md:top-12 opacity-20"
           />
         </motion.div>
